@@ -440,8 +440,8 @@ else if (category === 'traits') {
 }else if (category === "magic-schools") {
     return (
         <div>
-            <h1>{data.name}</h1>
-            <p>{data.desc}</p>
+            <h1>{item.name}</h1>
+            <p>{item.desc}</p>
         </div>
     );
 }else {
