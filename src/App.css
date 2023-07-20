@@ -37,6 +37,6 @@
   }
 }
 
-.title{
+.title, .item{
   text-transform: capitalize;
 }
