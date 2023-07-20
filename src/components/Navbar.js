@@ -30,11 +30,11 @@ function Navbar() {
   };
 
   return (
-    <nav>
+    <div>
       {Object.entries(endpoints).map(([name, endpoint]) => (
-        <Link key={endpoint} to={`/${endpoint}`}>{name}</Link> 
+        <Link key={endpoint} to={`/${endpoint}`}>{name}<br /></Link> 
       ))}
-    </nav>
+    </div>
   );
 }
 

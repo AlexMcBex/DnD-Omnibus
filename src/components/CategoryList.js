@@ -17,10 +17,11 @@ function CategoryList() {
 
   return (
     <div>
-        <h1 className='title category'>{category}</h1>
+        <h2 className='title category'>Category: {category}</h2>
       {items.map((item) => (
         <Link key={item.index} to={`/${category}/${item.index}`}>{item.name}<br /></Link> 
       ))}
+      <Link to={`/`}><h4>Go Back to categories list</h4></Link> 
     </div>
   );
 }

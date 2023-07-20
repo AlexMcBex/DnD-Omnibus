@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 // This is your ItemDetail component. 
 // Here we're using React's useEffect hook to fetch data from the API when the component mounts.
@@ -20,6 +20,7 @@ function ItemDetail() {
 
   return (
     <div>
+         <Link to={`/${category}`}><h4>Go Back to <i>{category}</i></h4></Link> 
       <h1>{item.name}</h1>
       // Display more details as needed
     </div>

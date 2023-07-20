@@ -11,9 +11,10 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <h1>DnD Omnibus</h1>
       <SearchBar />
       <Routes>
+        <Route  path="/" Component={Navbar}/>
         <Route exact path="/:category" Component={CategoryList} />
         <Route exact path="/:category/:id" Component={ItemDetail} />
         <Route  Component={ErrorPage} />
