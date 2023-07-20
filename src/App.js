@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import SearchBar from './components/SearchBar';
+// import SearchBar from './components/SearchBar';
 import CategoryList from './components/CategoryList';
 import ItemDetail from './components/ItemDetail';
 import SubItemDetail from './components/SubItemDetail';
