@@ -437,10 +437,14 @@ else if (category === 'traits') {
             <Link to={`/${category}`}><h4>Go Back to <i>{category}</i></h4></Link>
         </div>
     );
-}
-
-// ... other code ...
-else {
+}else if (category === "magic-schools") {
+    return (
+        <div>
+            <h1>{data.name}</h1>
+            <p>{data.desc}</p>
+        </div>
+    );
+}else {
         return (
             <div>
                 <h1>{item.name}</h1>
