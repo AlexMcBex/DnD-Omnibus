@@ -8,13 +8,19 @@ function ItemDetail() {
     const { category, id } = useParams();
 
     useEffect(() => {
+        let isMounted = true; 
         const fetchData = async () => {
             const response = await axios.get(`https://www.dnd5eapi.co/api/${category}/${id}`);
-            console.log('CATEGORY: ' + category)
-            setItem(response.data);
+            console.log('CATEGORY: ' + category) 
+            if (isMounted) { 
+                setItem(response.data);
+            }
         };
 
-        fetchData();
+        fetchData(); 
+        return () => { 
+            isMounted = false;
+        };
     }, [category, id]);
 
     if (!item) {
