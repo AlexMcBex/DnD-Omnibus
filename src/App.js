@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 // import SearchBar from './components/SearchBar';
 import CategoryList from './components/CategoryList';
@@ -12,7 +12,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <h1>DnD Omnibus</h1>
+      <Link to={'/'}> <h1>DnD Omnibus</h1></Link>
       {/* <SearchBar /> */}
       <Routes>
         <Route  path="/" Component={Navbar}/>
