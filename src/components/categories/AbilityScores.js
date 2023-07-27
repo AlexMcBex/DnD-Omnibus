@@ -19,15 +19,6 @@ function AbilityScores() {
         fetchData();
     }, [category, id]);
     
-    if (isLoading) {
-        return <div>Loading...</div>;
-    }
-
-    if (!item) {
-        return <div>Loading...</div>;
-    }
-
-    if (category === 'ability-scores') {
         return (
             <div>
                 <h1>{item.full_name || ''} ({item.name || ''})</h1>
@@ -44,6 +35,6 @@ function AbilityScores() {
             </div>
         )
 }
-}
+
 
 export default AbilityScores;
